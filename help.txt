@@ -1,0 +1,14 @@
+let darkModeBtn = document.getElementById("darkModeBtn");
+let darkModeIcon = document.getElementById("darkModeIcon");
+let body = document.querySelector("body");
+let isDark = false;
+let a = darkModeBtn.addEventListener("click", function () {
+    body.classList.toggle("dark");
+    if (isDark) {
+        darkModeIcon.classList.replace("fa-sun", "fa-moon");
+        isDark = false;
+    } else {
+        darkModeIcon.classList.replace("fa-moon", "fa-sun");
+        isDark = true;
+    }
+});
