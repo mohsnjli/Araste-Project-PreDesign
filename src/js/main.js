@@ -31,18 +31,25 @@ function headerTrasition() {
 }
 
 // ----------Dark Mode Functions------
-
+let waveSvg = document.getElementById("footerWave");
 let darkModeBtn = document.getElementById("darkModeBtn");
 let darkModeIcon = document.getElementById("darkModeIcon");
+let afterLi = document.getElementsByClassName("after");
 let body = document.querySelector("#body");
 let isDark = true;
+
 darkModeBtn.addEventListener("click", function () {
     body.classList.toggle("dark")
     if (isDark) {
-        darkModeIcon.style.transform = "rotate(180deg)"
+        waveSvg.src = "/pics/icons/svg/pattern(dark).svg";
+        darkModeIcon.style.transform = "rotate(180deg)";
+        afterLi.style.backgroundColor = "white";
         isDark = false;
     } else {
+        waveSvg.src = "/pics/icons/svg/pattern(footer).svg";
         darkModeIcon.style.transform = "rotate(0)";
+        afterLi.style.backgroundColor = "white";
+
         isDark = true;
     }
 });
