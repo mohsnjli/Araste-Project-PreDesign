@@ -14,7 +14,7 @@
 </head>
 
 <body id="body" class="w-full h-screen overflow-x-hidden">
-    <div class="w-full h-[90vh] overflow-hidden ">
+    <div class="w-full h-screen overflow-hidden">
         <header id="header"
             class="w-full h-36 p-2 flex items-center justify-between lg:justify-center lg:bg-transparent">
             <a id="darkModeBtn" class=" w-1/6 h-24 flex items-center justify-center">
@@ -116,10 +116,171 @@
                 </ul>
             </nav>
         </header>
+        <div class="w-full h-full flex lg:flex-row flex-col items-center justify-center">
+            <div class="w-1/2 h-1/3 lg:h-full flex justify-center">
+                <img src="/pics/MainShapes/mainPic.png" alt="" class="w-[200px] h-[200px] lg:w-[500px] lg:h-[500px]">
+            </div>
+            <div class="w-1/2 h-1/2 lg:h-full text-center lg:m-24 p-12 dark:text-white">
+                <h1 class="text-xl font-extrabold lg:text-6xl lg:text-left lg:mt-16  rounded-r-full">
+                    به آراسته خوش آمدید</h1>
+                <p class="inline-block text-darkBlue-700 font-bold mt-12 text-2xl dark:text-white">
+                    بهترین قیمت ها را از ما بخواهید</p>
+                <div class="w-full h-full flex justify-center items-baseline">
+                    <button
+                        class="w-36 h-12 block rounded-3xl border-2 border-blue-900 lg:mt-16 hover:bg-blue-900 hover:text-white dark:border-white dark:hover:bg-white dark:hover:text-blue-900 transition">مشاهده
+                        محصولات</button>
 
+                </div>
+                <br>
+            </div>
+        </div>
     </div>
+    <br><br><br><br>
+    <section
+        class="relative w-4/5  mx-auto h-1/4  flex-row flex  items-center justify-around dark:border-w text-white border-2 border-black dark:border-white rounded-full lg:h-36">
+        <div class="flex flex-col items-center justify-center ">
+            <img id="likeIcon" src="/pics/icons/svg/Star" alt="" class="lg:w-[75px] lg:h-[75px] w-[60px] h-[60px]">
+            <h3 class="text-black font-bold lg:text-base dark:text-white text-sm">محصولات با کیفیت</h3>
+        </div>
+        <div class="flex flex-col items-center justify-center ">
+            <img id="deliveryIcon" src="/pics/icons/svg/Delivery.svg" alt=""
+                class="lg:w-[75px] lg:h-[75px] w-[60px] h-[60px]">
+            <h3 class="text-black font-bold lg:text-base dark:text-white text-sm">ارسال به سراسر کشور</h3>
+        </div>
+        <div class="flex flex-col items-center justify-center ">
+            <img id="moneyIcon" src="/pics/icons/svg/Money.svg" alt=""
+                class="lg:w-[75px] lg:h-[75px] w-[60px] h-[60px]">
+            <h3 class="text-black font-bold lg:text-base dark:text-white text-sm">قیمت تولیدی</h3>
+        </div>
+    </section>
 
+    <section
+        class="w-full h-1/2 mx-auto bg-blue-900 dark:bg-darkBlue-900 mt-36 flex items-center justify-center flex-col">
+        <label for="searchBar" class="text-white text-3xl">جستجو کنید...!</label>
+        <form action="" class="w-full flex justify-center ">
+            <input name="searchBar" type="search" name="" id=""
+                class="my-14 px-8 py-2 w-1/2 lg:w-1/12 lg:focus:w-1/3 rounded-full focus:shadow-xl transition-all">
+            <button class="mr-1"><i
+                    class="fa-solid fa-magnifying-glass text-2xl hover:text-blue-900 hover:bg-white p-3 rounded-full bg-blue-900 text-white transition"></i></button>
+        </form>
+    </section>
+    <br><br>
+    <article class="w-2/3 h-screen mx-auto flex flex-col items-start justify-start">
+        <div class="w-2/3 rounded-full h-1 bg-blue-900 dark:hidden relative top-12 -z-10"></div>
 
+        <div class="w-max h-max p-4 bg-white dark:bg-transparent rounded-xl">
+
+            <h3 class="text-4xl text-black dark:text-white font-extrabold text-right pt-10 inline">
+                <img src="/pics/icons/svg/stack-horizontal.svg" alt=""
+                    class="inline w-[70px] bg-blue-900 dark:bg-darkBlue-900 p-4 rounded-full">&nbsp;دسته بندی محصولات
+            </h3>
+        </div>
+        <br><br>
+        <div class="w-full h-1/2 flex flex-row items-center justify-center ">
+            <div class="w-full h-full">
+                <h4 class="text-center pl-16 text-3xl dark:text-white font-semibold mb-4">سفره</h4>
+                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"> <i
+                            class="fa-solid fa-chevron-left"></i> گیاهی</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"> <i
+                            class="fa-solid fa-chevron-left"></i> سفره عرض 1</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"> <i
+                            class="fa-solid fa-chevron-left"></i> سفره عرض 2</a>
+                    <a href="#" class="group m-8 hover:scale-110 font-semibold transition  inline">بیشتر <img
+                            src="/pics/icons/svg/chevron-double-left.svg" alt=""
+                            class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
+                </ul>
+            </div>
+            <div class="w-full h-full">
+                <h4 class="text-center pl-16 text-3xl dark:text-white font-semibold mb-4"> دستمال</h4>
+                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"> <i
+                            class="fa-solid fa-chevron-left"></i> اقتصادی</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"> <i
+                            class="fa-solid fa-chevron-left"></i> دستمال 100</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"> <i
+                            class="fa-solid fa-chevron-left"></i> دستمال 200</a>
+                    <a href="#" class="group m-8 hover:scale-110 font-semibold transition  inline">بیشتر <img
+                            src="/pics/icons/svg/chevron-double-left.svg" alt=""
+                            class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
+                </ul>
+            </div>
+            <div class="w-full h-full">
+                <h4 class="text-center pl-16 text-3xl dark:text-white font-semibold mb-4">دسته بندی 1</h4>
+                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"><i
+                            class="fa-solid fa-chevron-left"></i> محصول 1</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"><i
+                            class="fa-solid fa-chevron-left"></i> محصول 2</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"><i
+                            class="fa-solid fa-chevron-left"></i> محصول 3</a>
+                    <a href="#" class="group m-8 hover:scale-110 font-semibold transition  inline">بیشتر <img
+                            src="/pics/icons/svg/chevron-double-left.svg" alt=""
+                            class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
+                </ul>
+            </div>
+            <div class="w-full h-full">
+                <h4 class="text-center pl-16 text-3xl dark:text-white font-semibold mb-4">دسته بندی 2</h4>
+                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"><i
+                            class="fa-solid fa-chevron-left"></i> محصول 1</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"><i
+                            class="fa-solid fa-chevron-left"></i> محصول 2</a>
+                    <a href="#" class="m-8 hover:scale-110 font-semibold transition"><i
+                            class="fa-solid fa-chevron-left"></i> محصول 3</a>
+                    <a href="#" class="group m-8 hover:scale-110 font-semibold transition  inline">بیشتر <img
+                            src="/pics/icons/svg/chevron-double-left.svg" alt=""
+                            class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+    <section class="w-2/3 h-screen mx-auto flex flex-col items-start justify-start">
+        <div class="w-2/3 rounded-full h-1 bg-blue-900 dark:hidden relative top-12 -z-10"></div>
+        <div class="w-max h-max p-4 bg-white dark:bg-transparent rounded-xl">
+            <h3 class="text-4xl text-black dark:text-white font-extrabold text-center pt-10 inline">
+                <img src="/pics/icons/svg/lightning.svg" alt=""
+                    class="inline w-[70px] bg-blue-900 dark:bg-darkBlue-900 p-4 rounded-full">&nbsp;
+                خرید شگفت انگیز
+            </h3>
+        </div>
+        <div class="w-full h-full flex flex-row items-center justify-center">
+            <div
+                class="w-1/4 h-4/5 m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
+                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
+                <h5 class="text-center  mt-6 font-extrabold text-xl">دستمال کاغذی</h5>
+                <p class="text-center text-lg font-semibold mt-6">12000 تومان</p>
+                <button
+                    class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
+            </div>
+            <div
+                class="w-1/4 h-4/5 m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
+                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
+                <h5 class="text-center  mt-6 font-extrabold text-xl">دستمال کاغذی</h5>
+                <p class="text-center text-lg font-semibold mt-6">12000 تومان</p>
+                <button
+                    class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
+            </div>
+            <div
+                class="w-1/4 h-4/5 m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
+                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
+                <h5 class="text-center  mt-6 font-extrabold text-xl">دستمال کاغذی</h5>
+                <p class="text-center text-lg font-semibold mt-6">12000 تومان</p>
+                <button
+                    class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
+            </div>
+            <div
+                class="w-1/4 h-4/5 m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
+                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
+                <h5 class="text-center  mt-6 font-extrabold text-xl">دستمال کاغذی</h5>
+                <p class="text-center text-lg font-semibold mt-6">12000 تومان</p>
+                <button
+                    class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
 
 
 
@@ -131,43 +292,51 @@
             <div class="w-full h-full flex flex-col-reverse items-center justify-center lg:flex-row-reverse ">
                 <div class="w-full h-full flex items-center justify-start flex-col">
                     <br>
-                    <h5 class="text-center text-2xl font-extrabold">مشتریان ما</h5>
-                    <div class="w-full h-max flex flex-row">
-                        <div class="bg-slate-200 w-1/4 h-24 m-2 rounded-2xl"></div>
-                        <div class="bg-slate-200 w-1/4 h-24 m-2 rounded-2xl"></div>
-                        <div class="bg-slate-200 w-1/4 h-24 m-2 rounded-2xl"></div>
-                        <div class="bg-slate-200 w-1/4 h-24 m-2 rounded-2xl"></div>
+                    <h5 class="text-center text-2xl font-extrabold text-white mb-2 border-b-2 border-white">مشتریان ما
+                    </h5>
+                    <div class="w-full h-max flex flex-row justify-center flex-wrap">
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
+                        <div class="bg-white/10 w-1/3 h-24 m-2 rounded-2xl"></div>
                     </div>
                 </div>
                 <div class="w-full h-full flex flex-col items-center justify-center ">
                     <div class="w-full h-full flex flex-col items-center justify-center">
-                        <label for="Newsletters" class="mt-4 font-bold text-lg">با ثبت ایمیل، از جدید‌ترین
+
+                        <label for="Newsletters" class="mt-4 font-bold text-xl text-center leading-normal text-white">با
+                            ثبت ایمیل، از <br> جدید‌ترین
                             تخفیف‌ها با‌خبر شوید...!
                         </label>
-                        <br>
                         <div class="w-full h-full flex flex-row items-center justify-center">
                             <input name="Newsletters" style="direction:ltr;" type="tel"
-                                class="my-auto w-1/3 px-4 py-3 rounded-md bg-slate-200 hover:bg-slate-300 focus:bg-slate-100 focus:shadow-lg  lg:w-2/3"
+                                class=" w-1/3 px-4 py-3 rounded-md bg-slate-200 hover:bg-slate-300 focus:bg-slate-100 focus:shadow-lg  lg:w-1/2"
                                 placeholder="Example@gmail.com">
                             <a href="#"
-                                class="w-24 h-12 mr-1 flex flex-row justify-center 
-                                 bg-slate-200 rounded-md hover:bg-gradient-to-tr text-slate-400  hover:from-blue-900 hover:to-blue-600 hover:text-white dark:hover:bg-slate-700  hover:shadow-lg lg:my-auto lg:mx-2 lg:text-base lg:w-8">
+                                class="w-16 h-12 mr-1 flex flex-row justify-center 
+                                 bg-slate-200 rounded-md hover:bg-gradient-to-tr text-slate-400  hover:from-blue-900 hover:to-blue-600 hover:text-white dark:hover:bg-slate-700  hover:shadow-lg lg:my-auto lg:mx-2 lg:text-base lg:w-18">
                                 <span class="text-sm my-auto lg:text-base">&nbsp;ثبت</span>
                             </a>
                         </div>
                     </div>
                     <br>
                     <div class="w-full h-full flex flex-col items-center text-right text-black ">
-                        <p class="text-black font-bold text-base mt-2 dark:text-white">ساعات پاسخگویی : 8 تا 20</p>
-                        <p class="text-sm mt-4 font-semibold  dark:text-white">شماره تلفن : <a href="tel:+989123456789"
-                                class="underline hover:text-white">989123456789+</a></p>
-                        <p class="text-sm mt-4 font-semibold  dark:text-white">پست الکترونیکی : <a
-                                href="mailto:Example@gmail.com" class="underline hover:text-white">Example@gmail.com</a>
+                        <p class="font-bold text-xl mt-2 text-white">ساعات پاسخگویی : 8 تا 20</p>
+                        <p class="text-lg mt-4 font-semibold text-white">شماره تلفن : <a href="tel:+989123456789"
+                                class="underline hover:text-yellow-500">989123456789+</a></p>
+                        <p class="text-lg mt-4 font-semibold text-white">پست الکترونیکی : <a
+                                href="mailto:Example@gmail.com"
+                                class="underline hover:text-yellow-500">Example@gmail.com</a>
                         </p>
                     </div>
                     <br>
-                    <div class="w-full h-full flex flex-row items-center justify-center">
-                        <a href=""> <img class="m-2 rounded-lg" src="/pics/png/enamad.jpg" alt="" style="width: 95px; "></a>
+                    <div class="w-full h-full flex flex-row items-start justify-center">
+                        <a href=""> <img class="m-2 rounded-lg" src="/pics/png/enamad.jpg" alt=""
+                                style="width: 95px; "></a>
                         <a href=""> <img class="m-2" src="/pics/png/zarinpal.png" alt="" style="width: 75px;"></a>
                     </div>
                 </div>
@@ -175,16 +344,27 @@
                 <div class="h-full w-full flex flex-col items-center justify-center ">
                     <div class="w-full h-full p-12 flex flex-col items-center justify-center text-right space-y-4">
                         <span class=""></span>
-                        <h3 class="text-right font-extrabold text-2xl">با آراسته</h3>
-                        <a href="#" class="hover:text-white dark:hover:text-txt font-semibold">درباره آراسته</a>
-                        <a href="#" class="hover:text-white dark:hover:text-txt font-semibold">تماس با آراسته</a>
+                        <h3 class="text-right font-extrabold text-2xl text-white border-b-2 border-white">با آراسته</h3>
+                        <a href="#"
+                            class="text-white dark:hover:text-txt text-lg hover:text-yellow-500  font-semibold">درباره
+                            آراسته</a>
+                        <a href="#"
+                            class="text-white dark:hover:text-txt text-lg hover:text-yellow-500  font-semibold">تماس با
+                            آراسته</a>
                     </div>
                     <div class="w-full h-full p-12 flex flex-col items-center justify-center text-right space-y-4 ">
-                        <h3 class="text-right font-extrabold text-2xl">خدمات مشتریان</h3>
-                        <a href="#" class="hover:text-white dark:hover:text-txt font-semibold">پاسخ به پرسش های
+                        <h3 class="text-right font-extrabold text-2xl text-white border-b-2 border-white">خدمات مشتریان
+                        </h3>
+                        <a href="#"
+                            class="text-white dark:hover:text-txt text-lg hover:text-yellow-500  font-semibold">پاسخ به
+                            پرسش های
                             متداول</a>
-                        <a href="#" class="hover:text-white dark:hover:text-txt font-semibold">حریم خصوصی</a>
-                        <a href="#" class="hover:text-white dark:hover:text-txt font-semibold">نحوه ثبت سفارش</a>
+                        <a href="#"
+                            class="text-white dark:hover:text-txt text-lg hover:text-yellow-500  font-semibold">حریم
+                            خصوصی</a>
+                        <a href="#"
+                            class="text-white dark:hover:text-txt text-lg hover:text-yellow-500  font-semibold">نحوه ثبت
+                            سفارش</a>
                     </div>
                 </div>
 
@@ -194,6 +374,22 @@
             class="w-16 h-16 flex items-center justify-center fixed bottom-2 left-2 bg-white hover:bg-darkBlue-800 rounded-full">
             <img src="/pics/icons/svg/up.svg" alt="" class="iconSize">
         </button>
+        <div id="socialBar"
+            class="fixed left-1/3 lg:left-[45%] rounded-full bottom-2 w-max h-max bg-blue-900 dark:bg-darkBlue-900 text-white dark:text-white shadow-xl flex items-center justify-center transition-all ">
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-brands fa-instagram">
+                    <div class="after"></div>
+                </i></a>
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-solid fa-phone">
+                    <div class="after"></div>
+                </i></a>
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-regular fa-envelope">
+                    <div class="after"></div>
+                </i></a>
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-brands fa-whatsapp">
+                    <div class="after"></div>
+                </i></a>
+        </div>
+        <h5 id="yearCopyRight" class="w-full h-max text-center text-black" dir="ltr">&copy;</h5>
     </footer>
 
 
@@ -205,6 +401,3 @@
 </body>
 
 </html>
-
-
-

@@ -33,8 +33,16 @@ module.exports = {
           900: "#102a43",
         },
       },
+      borderColor: {
+        "darkBlue": {
+          900: "#102a43",
+        },
+      },
       colors: {
-        "txt": "#007acc"
+        "darkBlue": {
+          900: "#102a43",
+          
+        },
       },
 
       borderRadius: {

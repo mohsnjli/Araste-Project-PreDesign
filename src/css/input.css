@@ -33,19 +33,19 @@
     transform: translate(-50%, -35%);
 }
 
+.smIconSize {
+    width: 20px;
+    height: 20px;
+}
+
 .iconSize {
     width: 30px;
     height: 30px;
 }
 
 .iconSizeDark {
-    width: 50px;
-    height: 50px;
-}
-
-.smIconSize {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .li-hover {
