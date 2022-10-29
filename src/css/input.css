@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --purple: "#000"
-}
-
 @font-face {
     font-family: "shabnam";
     src: url("/fonts/Shabnam.ttf") format("truetype");
@@ -20,58 +16,71 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 /* --------------------------- Header Components -------------------------------- */
-#goToTop {
-    transition: all 0.3s ease-in-out;
+#goToTop,
+.li-hover .after {
+    transition: all 0.2s ease-in-out;
 }
+
 #goToTop:hover::after {
-    content:"TOP";
+    content: "TOP";
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     font-size: larger;
-    transform: translate(-50% , -35%);
-    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -35%);
 }
+
 .iconSize {
     width: 30px;
     height: 30px;
 }
+
+.iconSizeDark {
+    width: 50px;
+    height: 50px;
+}
+
 .smIconSize {
     width: 20px;
     height: 20px;
 }
+
 .li-hover {
     cursor: pointer;
     position: relative;
 }
 
-.li-hover::after{
+.li-hover .after {
     content: "";
     position: absolute;
+    background-color: #fff;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 500%);
-    width:8px;
-    height:8px;
-    background-color: rgba(52, 70, 117);
+    width: 8px;
+    height: 8px;
     border-radius: 50px;
-    transition: all 0.3s ease-in-out;
+
 }
-.li-hover:hover::after {
+
+.li-hover:hover .after {
     transform: translate(-50%, 100%);
-    
+
 }
+
 /* ----------------------End Header Components ------------------------ */
 
 /* --------=------------Footer Components ------------------------- */
-.footerIconSize { 
+.footerIconSize {
     width: 50px;
     height: 50px;
     opacity: 50%;
 }
-.footerIconSize:hover { 
+
+.footerIconSize:hover {
     opacity: 80%;
 }
 
