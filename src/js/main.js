@@ -62,17 +62,17 @@ let navBar = document.querySelector("#navBar");
 
 hamburgerMenuBtn.addEventListener("click", function () {
     navBar.style.display = "block";
-    navBar.style.transform = "translateX(0px)"
+    navBar.style.transform = "scale(1) ";
 })
 exBtn.addEventListener("click", function () {
-    navBar.style.transform = "translateX(-100%)"
+    navBar.style.transform = "scale(0) ";
     navBar.style.display = "hidden";
 })
 
 const date = new Date();
 var n = date.getFullYear();
 let copyRightYear = document.getElementById("yearCopyRight");
-copyRightYear.innerHTML = n +"copyrights";
+copyRightYear.innerHTML = n + "copyrights";
 
 
 
