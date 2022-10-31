@@ -15,7 +15,7 @@ darkModeBtn.addEventListener("click", function () {
         moneyIcon.src = "/pics/icons/svg/Money(dark).svg"
         deliveryIcon.src = "/pics/icons/svg/Delivery(dark).svg"
         footerWaveSvg.src = "/pics/icons/svg/pattern(dark).svg";
-        darkModeIcon.style.transform = "rotate(180deg)";
+        darkModeIcon.style.transform = "rotate(-180deg)";
         body.style.backgroundColor = "#243b53";
         darkModeIcon.src = "/pics/icons/svg/contrast(dark).svg";
         isDark = false;
@@ -68,12 +68,6 @@ exBtn.addEventListener("click", function () {
     navBar.style.transform = "scale(0) ";
     navBar.style.display = "hidden";
 })
-
-const date = new Date();
-var n = date.getFullYear();
-let copyRightYear = document.getElementById("yearCopyRight");
-copyRightYear.innerHTML = n + "copyrights";
-
 
 
 

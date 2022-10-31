@@ -7,19 +7,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <section class="w-full h-screen bg-blue-900">
-        <div class="w-1/2 h-full bg-white">
-            
+<body class="overflow-hidden">
+    <section name="desktop-LoginForm" class="w-full h-screen flex flex-row items-center justify-center">
+        <div id="signIn" class="z-50 w-full h-screen bg-white transition-all duration-500 ease-in-out">
+            <div id="signInContainer"
+                class=" w-full h-screen mx-auto flex items-center flex-col justify-center transition-all duration-500 ease-in-out">
+                <form action=""
+                    class="w-full h-full flex flex-col items-center justify-center flex-nowrap bg-white shadow-xl p-8">
+                    <h1 class="text-right text-4xl mb-7 w-full border-b-2 border-slate-300 font-extrabold pb-2">ثبت
+                        عضویت
+                    </h1>
+                    <div class="w-2/3 h-full flex flex-col items-center justify-items-start space-y-3">
+                        <label for="fname" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                                class="fa-solid fa-pen"></i> نام</label>
+                        <input name="fname" type="text"
+                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
+                        <label for="telInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                                class="fa-solid fa-mobile"></i> تلفن همراه</label>
+                        <input name="telInp" type="tel"
+                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
+                        <label for="mailInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                                class="fa-regular fa-envelope-open"></i> پست الکترونیکی</label>
+                        <input name="mailInp" type="email"
+                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
+                        <label for="passwordInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                                class="fa-solid fa-key"></i> رمز ورود</label>
+                        <input name="passowordInp" type="password" placeholder="**********"
+                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
+                        <button class="w-8/12 p-2 bg-gradient-to-tr from-blue-900 to-blue-700 hover:brightness-110 rounded-lg text-white text-bold
+                        ">ثبت نام</button>
+                    </div>
+                </form>
+
+            </div>
         </div>
+        <div id="logIn" class="w-2/3 h-screen bg-blue-900 shadow-2xl transition-all duration-500 ease-in-out">
 
+            <button id="changeBtn"
+                class="z-50 text-white tracking-wide relative top-5 right-5 font-semibold text-lg p-2 hover:bg-white hover:text-blue-900 shadow-xl rounded-lg transition-all duration-300 ease-in-out"><span></span>
+                
+            </button>
+            <div id="logInContainer" class="w-full h-full hidden opacity-0 transition-all ">
+                <form id action="" class="w-full h-full flex flex-col items-start justify-center flex-nowrap p-8">
+                    <div class="w-2/3 h-full  flex flex-col items-center justify-center space-y-3">
+                        <label for="mailInp" class="text-right font-bold text-white text-base w-8/12"><i
+                                class="fa-regular fa-envelope-open"></i> پست الکترونیکی</label>
+                        <input name="mailInp" type="email"
+                            class="bg-white focus:shadow-lg ring-slate-200 w-2/3 p-2 rounded-md transition ">
+                        <label for="passwordInp" class="text-right font-bold text-white text-base w-8/12"><i
+                                class="fa-solid fa-key"></i> رمز ورود</label>
+                        <input name="passowordInp" type="password" placeholder="**********"
+                            class="bg-white focus:shadow-lg ring-slate-200 w-2/3 p-2 rounded-md transition ">
+                        <div class="flex items-center justify-start w-2/3 m-2">
+                            <a href="#" class="text-white hover:underline text-lg">فراموشی رمز عبور</a>
+                        </div>
+                        <button class="w-8/12 p-2 bg-gradient-to-tr from-blue-900 to-blue-700 hover:brightness-110 rounded-lg text-white text-bold
+                        ">ثبت نام</button>
+                    </div>
 
+                </form>
 
-
+            </div>
+            <div id="loginImage"
+                class=" left-0 bottom-0 absolute w-full h-full flex flex-col items-end justify-end transition-all duration-500 ease-in-out">
+                <img src="/pics/icons/login/opt.svg" alt="" class="w-5/12 h-5/12">
+            </div>
+        </div>
     </section>
-    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 
 </html>
