@@ -68,13 +68,9 @@ exBtn.addEventListener("click", function () {
     navBar.style.transform = "scale(0) ";
     navBar.style.display = "hidden";
 })
-
-
-
-
-
-
-
+$(document).ready(function () {
+    alert("hello")
+})
 
 
 

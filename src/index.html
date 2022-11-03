@@ -21,17 +21,23 @@
                 <img id="darkModeIcon" src="/pics/icons/svg/contrast.svg" class="iconSizeDark cursor-pointer hover:rotate-180 transition-all duration-500 ease-in-out
                     " alt="">
             </a>
-            <div class="flex items-center justify-center w-full h-24 lg:hidden">
+
+            <div id="headerBanner" class="flex items-center justify-center w-full h-24 lg:hidden">
                 <img src="/pics/icons/svg/LOGO.svg" alt=""
                     class="w-[120px] h-[120px] border-2 border-transparent px-1 rounded-full">
             </div>
             <div id="listItem"
                 class="hidden lg:flex w-5/6 h-16 sticky top-2 text-sm font-medium text-textPurple bg-blue-900 rounded-full   shadow-2xl overflow-hidden dark:bg-darkBlue-900 text-white flex-row-reverse items-center justify-around ">
-                <a href="/src/login.html"><title>ورود/ثبت نام</title>
-                    <i class="fa-solid fa-circle-user text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
+                <a href="/src/login.html">
+                    <title>ورود/ثبت نام</title>
+                    <i
+                        class="fa-solid fa-circle-user text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
                 </a>
                 <a href="#">
-                    <i class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"><title>خبرنامه</title></i>
+                    <i
+                        class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition">
+                        <title>خبرنامه</title>
+                    </i>
                 </a>
                 <ul class="w-full h-full my-auto flex text-base font-semibold items-center justify-start ">
                     <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
@@ -87,13 +93,18 @@
                     class="fa-solid fa-bars text-5xl dark:text-white dark:bg-darkBlue-900 p-4 rounded-xl text-blue-900"></i>
             </button>
             <nav id="navBar"
-                class="hidden transition-all duration-500 ease-in-out rounded-3xl lg:hidden absolute left-2 top-2 overflow-hidden w-2/3 h-3/4 bg-blue-900 dark:bg-darkBlue-900">
+                class="hidden transition-all duration-500 ease-in-out rounded-3xl lg:hidden absolute left-2 top-2 overflow-hidden w-2/3 h-max bg-blue-900 dark:bg-darkBlue-900">
                 <button id="exBtn" class="absolute left-4 top-4">
                     <i
                         class=" fa-solid fa-xmark text-6xl text-white hover:text-blue-900 hover:bg-white px-3 rounded-full transition"></i>
                 </button>
                 <ul
                     class="w-full h-full flex flex-col items-start justify-center text-2xl text-center p-4 space-y-4 text-white">
+                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
+                        <i
+                            class="fa-solid fa-circle-user text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
+                        <li class="inline">ثبت نام / ورود</li>
+                    </a>
                     <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
                         <img src="/pics/icons/svg/house.svg" alt="" class="w-iconW h-iconW inline rounded-full">
                         <li class="inline">خانه</li>
@@ -116,8 +127,9 @@
                         <li class="inline">درباره آراسته</li>
                     </a>
                     <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <img src="/pics/icons/svg/phone-call.svg" alt="" class="w-iconW h-iconW inline rounded-full">
-                        <li class="inline">تماس با ما</li>
+                        <i
+                            class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
+                        <li class="inline">خبرنامه</li>
                     </a>
                 </ul>
             </nav>
@@ -172,75 +184,70 @@
         </form>
     </section>
     <br><br>
-    <article class="relative w-2/3 h-screen mx-auto flex flex-col items-start justify-start">
+    <article class="relative w-full h-screen mx-auto flex flex-col items-start justify-start">
         <div class="w-full h-max p-4 dark:bg-transparent rounded-xl flex justify-center">
             <h3 class="text-2xl text-black dark:text-white font-extrabold text-center pt-10 inline">
                 <img src="/pics/icons/svg/stack-horizontal.svg" alt=""
                     class="inline w-[70px] bg-blue-900 dark:bg-darkBlue-900 p-4 rounded-full">&nbsp;دسته بندی محصولات
             </h3>
         </div>
+        <div class="w-2/3 pr-14"><a href="#"><i class="fa-solid fa-chevron-right"></i>مشاهده همه </a></div>
         <br><br>
-        <div class="w-full h-1/2 flex flex-row items-center justify-center ">
+        <div class="w-full h-max flex flex-row items-center justify-center p-6">
             <div class="w-full h-full">
-                <h4 class="text-right text-xl dark:text-white font-semibold mb-4 border-r-4 border-r-blue-800 pr-2">سفره
+                <h4 class="text-center text-base dark:text-white font-bold lg:text-2xl mb-4 border-b-2 border-b-blue-800 pr-2">
+                    سفره
                 </h4>
-                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"> <i
-                            class="fa-solid fa-chevron-left"></i> گیاهی</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"> <i
-                            class="fa-solid fa-chevron-left"></i> سفره عرض 1</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"> <i
-                            class="fa-solid fa-chevron-left"></i> سفره عرض 2</a>
+                <ul class="text-center h-max  flex flex-col text-darkBlue-900 dark:text-white">
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">گیاهی</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">سفره عرض 1</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">سفره عرض
+                        2</a>
                     <a href="#"
-                        class="group m-2 hover:scale-110 font-semibold transition  inline text-sm lg:text-base">بیشتر
+                        class="group m-2 hover:scale-110 font-semibold transition  inline text-xs lg:text-base">بیشتر
                         <img src="/pics/icons/svg/chevron-double-left.svg" alt=""
                             class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
                 </ul>
             </div>
             <div class="w-full h-full">
-                <h4 class="text-right text-xl dark:text-white font-semibold mb-4 border-r-4 border-r-blue-800 pr-2">
+                <h4 class="text-center text-base dark:text-white font-bold lg:text-2xl mb-4 border-b-2 border-blue-900 pr-2">
                     دستمال</h4>
-                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"> <i
-                            class="fa-solid fa-chevron-left"></i> اقتصادی</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"> <i
-                            class="fa-solid fa-chevron-left"></i> دستمال 100</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"> <i
-                            class="fa-solid fa-chevron-left"></i> دستمال 200</a>
+                <ul class="text-center h-max  flex flex-col text-darkBlue-900 dark:text-white">
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">اقتصادی</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">دستمال
+                        100</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">دستمال
+                        200</a>
                     <a href="#"
-                        class="group m-2 hover:scale-110 font-semibold transition  inline text-sm lg:text-base">بیشتر
+                        class="group m-2 hover:scale-110 font-semibold transition  inline text-xs lg:text-base">بیشتر
                         <img src="/pics/icons/svg/chevron-double-left.svg" alt=""
                             class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
                 </ul>
             </div>
             <div class="w-full h-full">
-                <h4 class="text-right text-xl dark:text-white font-semibold mb-4 border-r-4 border-r-blue-800 pr-2">دسته
+                <h4 class="text-center text-base dark:text-white font-bold lg:text-2xl mb-4 border-b-2 border-blue-900 pr-2">
+                    دسته
                     بندی </h4>
-                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"><i
-                            class="fa-solid fa-chevron-left"></i> محصول 1</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"><i
-                            class="fa-solid fa-chevron-left"></i> محصول 2</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"><i
-                            class="fa-solid fa-chevron-left"></i> محصول 3</a>
+                <ul class="text-center h-max  flex flex-col text-darkBlue-900 dark:text-white">
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">محصول 1</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">محصول 2</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">محصول 3</a>
                     <a href="#"
-                        class="group m-2 hover:scale-110 font-semibold transition  inline text-sm lg:text-base">بیشتر
+                        class="group m-2 hover:scale-110 font-semibold transition  inline text-xs lg:text-base">بیشتر
                         <img src="/pics/icons/svg/chevron-double-left.svg" alt=""
                             class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
                 </ul>
             </div>
             <div class="w-full h-full">
-                <h4 class="text-right text-xl dark:text-white font-semibold mb-4 border-r-4 border-r-blue-800 pr-2">دسته
+                <h4 class="text-center text-base dark:text-white font-bold lg:text-2xl mb-4 border-b-2 border-blue-900 pr-2">
+                    دسته
                     بندی </h4>
-                <ul class="text-right h-max  flex flex-col text-darkBlue-900 dark:text-white text-lg">
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"><i
-                            class="fa-solid fa-chevron-left"></i> محصول 1</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"><i
-                            class="fa-solid fa-chevron-left"></i> محصول 2</a>
-                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-sm lg:text-base"><i
-                            class="fa-solid fa-chevron-left"></i> محصول 3</a>
+                <ul class="text-center h-max  flex flex-col text-darkBlue-900 dark:text-white">
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">محصول 1</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">محصول 2</a>
+                    <a href="#" class="m-2 hover:scale-110 font-semibold transition text-xs lg:text-base">محصول 3</a>
                     <a href="#"
-                        class="group m-2 hover:scale-110 font-semibold transition  inline text-sm lg:text-base">بیشتر
+                        class="group m-2 hover:scale-110 font-semibold transition  inline text-xs lg:text-base">بیشتر
                         <img src="/pics/icons/svg/chevron-double-left.svg" alt=""
                             class="inline group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-10 smIconSize  transition-all"></a>
                 </ul>
@@ -257,8 +264,8 @@
         </div>
     </div>
     <br><br><br>
-    
-     
+
+
     <section class="w-full h-full flex items-center justify-center flex-row flex-wrap">
         <div
             class="w-full max-w-[300px] lg:max-w-sm bg-white rounded-lg shadow-md dark:bg-darkBlue-900 dark:border-gray-700 m-4 hover:scale-95 transition">
@@ -589,17 +596,17 @@
             <img src="/pics/icons/svg/up.svg" alt="" class="iconSize">
         </button>
         <div id="socialBar"
-            class="fixed left-1/3 lg:left-[45%] rounded-full bottom-2 w-max h-max bg-blue-900/50 text-white backdrop-blur-md dark:bg-darkBlue-900 text-white dark:text-white shadow-xl flex items-center justify-center transition-all ">
-            <a href="" class="m-4 li-hover"><i class="text-3xl text-white fa-brands fa-instagram">
+            class="fixed left-1/3 lg:left-[45%] rounded-full bottom-2 w-max h-max bg-blue-900/50 backdrop-blur-md dark:bg-darkBlue-900 text-white dark:text-white shadow-xl flex items-center justify-center transition-all ">
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-brands fa-instagram">
                     <div class="after"></div>
                 </i></a>
-            <a href="" class="m-4 li-hover"><i class="text-3xl text-white fa-solid fa-phone">
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-solid fa-phone">
                     <div class="after"></div>
                 </i></a>
-            <a href="" class="m-4 li-hover"><i class="text-3xl text-white fa-regular fa-envelope">
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-regular fa-envelope">
                     <div class="after"></div>
                 </i></a>
-            <a href="" class="m-4 li-hover"><i class="text-3xl text-white fa-brands fa-whatsapp">
+            <a href="" class="m-4 li-hover"><i class="text-3xl fa-brands fa-whatsapp">
                     <div class="after"></div>
                 </i></a>
         </div>
@@ -611,99 +618,3 @@
 </html>
 
 
-<!-- <div class="w-2/3 rounded-full h-1 bg-blue-900 dark:hidden relative top-12 -z-10"></div>
-    
-    <div class="relative w-full h-screen flex flex-col items-center flex-wrap lg:flex-nowrap lg:flex-row justify-center">
-        <div
-                class="relative text-xs w-1/2h-1/42 lg:h-4/5 m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
-                <h5 class="text-center  mt-6 font-extrabold text-sm lg:text-xl">دستمال کاغذی</h5>
-                <p class="text-center text-xs lg:text-lg font-semibold mt-6">12000 تومان</p>
-                <button
-                class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
-            </div>
-            <div
-            class="relative text-xs w-1/2 h-1/4 lg:h-4/5  m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
-                <h5 class="text-center  mt-6 font-extrabold text-sm lg:text-xl">دستمال کاغذی</h5>
-                <p class="text-center text-xs lg:text-lg font-semibold mt-6">12000 تومان</p>
-                <button
-                class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
-            </div>
-            <div
-            class="relative text-xs w-1/2h-1/42 lg:h-4/5 m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
-                <h5 class="text-center  mt-6 font-extrabold text-sm lg:text-xl">دستمال کاغذی</h5>
-                <p class="text-center text-xs lg:text-lg font-semibold mt-6">12000 تومان</p>
-                <button
-                    class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
-                </div>
-            <div
-            class="relative text-xs w-1/2 h-1/4 lg:h-4/5  m-2 flex flex-col justify-start dark:text-white items-center cursor-pointer hover:scale-110 hover:shadow-xl transition bg-gradient-to-tr from-slate-100 to-slate-50 dark:bg-gradient-to-tr dark:from-darkBlue-900 to dark:bg-darkBlue-800 rounded-lg">
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" class="rounded-lg " alt="">
-                <h5 class="text-center  mt-6 font-extrabold text-sm lg:text-xl">دستمال کاغذی</h5>
-                <p class="text-center text-xs lg:text-lg font-semibold mt-6">12000 تومان</p>
-                <button
-                class="w-2/3 px-8 py-2 rounded-lg hover:bg-blue-900 hover:text-white dark:text-darkBlue-900 dark:hover:text-white mt-6 bg-white">مشاهده</button>
-            </div> 
-            <div
-                class="relative  h-3/4 lg:w-3/5 lg:h-60 bg-gradient-to-tr from-slate-100 to-slate-50 mx-auto hover:scale-105 shadow-xl transition-all flex flex-row overflow-clip rounded-xl">
-                <i class="fa-solid fa-cart-shopping absolute left-5 top-5 text-3xl text-slate-500 hover:text-blue-500 cursor-pointer"></i>
-                <i class="fa-solid fa-heart absolute left-16 top-5 text-3xl text-slate-500 hover:text-red-500 cursor-pointer"></i>
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
-                    class="w-[50%] h-[50%] lg:w-1/3 lg:h-full lg:rounded-none rounded-bl-xl">
-                <div class="w-full h-2/3 over-flow-hidden p-12">
-                    <h5 class="text-right font-extrabold lg:text-2xl text-3xl mb-3">دستمال کاغذی</h5>
-                    <h6 class="text-right font-bold lg:text-xl text-xl text-slate-700 mb-3">قیمت :&nbsp;<span
-                            class="text-blue-500">12000</span></h6>
-                    <p class="text-slate-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                        </p>
-                </div>
-            </div>
-            <div
-                class="relative  h-3/4 lg:w-3/5 lg:h-60 bg-gradient-to-tr from-slate-100 to-slate-50 mx-auto hover:scale-105 shadow-xl transition-all flex flex-row overflow-clip rounded-xl">
-                <i class="fa-solid fa-cart-shopping absolute left-5 top-5 text-3xl text-slate-500 hover:text-blue-500 cursor-pointer"></i>
-                <i class="fa-solid fa-heart absolute left-16 top-5 text-3xl text-slate-500 hover:text-red-500 cursor-pointer"></i>
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
-                    class="w-[50%] h-[50%] lg:w-1/3 lg:h-full lg:rounded-none rounded-bl-xl">
-                <div class="w-full h-2/3 over-flow-hidden p-12">
-                    <h5 class="text-right font-extrabold lg:text-2xl text-3xl mb-3">دستمال کاغذی</h5>
-                    <h6 class="text-right font-bold lg:text-xl text-xl text-slate-700 mb-3">قیمت :&nbsp;<span
-                            class="text-blue-500">12000</span></h6>
-                    <p class="text-slate-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                        </p>
-                </div>
-            </div>
-            <div
-                class="relative  h-3/4 lg:w-3/5 lg:h-60 bg-gradient-to-tr from-slate-100 to-slate-50 mx-auto hover:scale-105 shadow-xl transition-all flex flex-row overflow-clip rounded-xl">
-                <i class="fa-solid fa-cart-shopping absolute left-5 top-5 text-3xl text-slate-500 hover:text-blue-500 cursor-pointer"></i>
-                <i class="fa-solid fa-heart absolute left-16 top-5 text-3xl text-slate-500 hover:text-red-500 cursor-pointer"></i>
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
-                    class="w-[50%] h-[50%] lg:w-1/3 lg:h-full lg:rounded-none rounded-bl-xl">
-                <div class="w-full h-2/3 over-flow-hidden p-12">
-                    <h5 class="text-right font-extrabold lg:text-2xl text-3xl mb-3">دستمال کاغذی</h5>
-                    <h6 class="text-right font-bold lg:text-xl text-xl text-slate-700 mb-3">قیمت :&nbsp;<span
-                            class="text-blue-500">12000</span></h6>
-                    <p class="text-slate-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                        </p>
-                </div>
-            </div>
-            <div
-                class="relative  h-3/4 lg:w-3/5 lg:h-60 bg-gradient-to-tr from-slate-100 to-slate-50 mx-auto hover:scale-105 shadow-xl transition-all flex flex-row overflow-clip rounded-xl">
-                <i class="fa-solid fa-cart-shopping absolute left-5 top-5 text-3xl text-slate-500 hover:text-blue-500 cursor-pointer"></i>
-                <i class="fa-solid fa-heart absolute left-16 top-5 text-3xl text-slate-500 hover:text-red-500 cursor-pointer"></i>
-                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
-                    class="w-[50%] h-[50%] lg:w-1/3 lg:h-full lg:rounded-none rounded-bl-xl">
-                <div class="w-full h-2/3 over-flow-hidden p-12">
-                    <h5 class="text-right font-extrabold lg:text-2xl text-3xl mb-3">دستمال کاغذی</h5>
-                    <h6 class="text-right font-bold lg:text-xl text-xl text-slate-700 mb-3">قیمت :&nbsp;<span
-                            class="text-blue-500">12000</span></h6>
-                    <p class="text-slate-500">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
-                        طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط
-                        </p>
-                </div>
-            </div> 
-        </div> -->

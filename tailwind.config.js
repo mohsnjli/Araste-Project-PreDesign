@@ -41,8 +41,11 @@ module.exports = {
       colors: {
         "darkBlue": {
           900: "#102a43",
-          
+
         },
+      },
+      dropShadow: {
+        '3xl': '0 35px 35px rgba(255, 255, 255, 0.15)'
       },
 
       borderRadius: {

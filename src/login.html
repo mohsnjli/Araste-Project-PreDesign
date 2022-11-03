@@ -10,64 +10,83 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/node_modules/jquery/src/jquery.js"></script>
 </head>
 
 <body class="overflow-hidden">
-    <section name="desktop-LoginForm" class="w-full h-screen flex flex-row items-center justify-center">
-        <div id="signIn" class="z-50 w-full h-screen bg-white transition-all duration-500 ease-in-out">
+
+
+    <section name="desktop-LoginForm" class="hidden w-full h-screen flex-row items-center justify-center lg:flex">
+        <!-- top Left bar (dark mode button & home Button) -->
+        <div class=" m-4  p-1 fixed top-0 left-0 text-xl  text-white   rounded-full z-50">
+            <a href="index.html" class="px-6 py-4"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="px-6 py-4 "><i class="fa-solid fa-moon align-middle "></i></a>
+        </div>
+        <!-- =============================================== -->
+
+        <img id="opt2" class="hidden absolute -right-2 w-2/5 drop-shadow-3xl" src="/pics/icons/login/opt2.svg" alt="">
+        <!-- login image -->
+
+        <div id="signIn" class="w-full h-screen transition-all duration-500 ease-in-out z-50">
             <div id="signInContainer"
                 class=" w-full h-screen mx-auto flex items-center flex-col justify-center transition-all duration-500 ease-in-out">
-                <form action=""
-                    class="w-full h-full flex flex-col items-center justify-center flex-nowrap bg-white shadow-xl p-8">
-                    <h1 class="text-right text-4xl mb-7 w-full border-b-2 border-slate-300 font-extrabold pb-2">ثبت
+                <form action="" name="formSignin"
+                    class="w-full h-full p-8 bg-white  flex flex-col items-center justify-center flex-nowrap shadow-xl ">
+                    <h1 class="w-full mb-7 pb-2 text-right text-4xl font-extrabold border-b-2 border-slate-300  ">ثبت
                         عضویت
                     </h1>
                     <div class="w-2/3 h-full flex flex-col items-center justify-items-start space-y-3">
                         <label for="fname" class="text-right font-bold text-slate-700 text-base w-8/12"><i
-                                class="fa-solid fa-pen"></i> نام</label>
+                                class="fa-solid fa-pen"></i> نام و نام خانوادگی</label>
                         <input name="fname" type="text"
-                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
+                            class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
                         <label for="telInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
                                 class="fa-solid fa-mobile"></i> تلفن همراه</label>
-                        <input name="telInp" type="tel"
-                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
-                        <label for="mailInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                        <input name="telInp" type="tel" placeholder="989123456789+"
+                            class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
+                        <label id="emailAddress" for="mailInp"
+                            class="text-right font-bold text-slate-700 text-base w-8/12"><i
                                 class="fa-regular fa-envelope-open"></i> پست الکترونیکی</label>
-                        <input name="mailInp" type="email"
-                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
+                        <input name="mailInp" type="email" placeholder="Example@gmail.com"
+                            class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
                         <label for="passwordInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
                                 class="fa-solid fa-key"></i> رمز ورود</label>
                         <input name="passowordInp" type="password" placeholder="**********"
-                            class="border-b-2 border-slate-300 focus:shadow-lg w-2/3 p-2 transition ">
-                        <button class="w-8/12 p-2 bg-gradient-to-tr from-blue-900 to-blue-700 hover:brightness-110 rounded-lg text-white text-bold
-                        ">ثبت نام</button>
+                            class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
+                        <input type="submit" name="submit" value="ثبت نام"
+                            class="w-8/12 p-2 bg-gradient-to-tr from-blue-900 to-blue-700 hover:brightness-110 rounded-lg text-white text-bold cursor-pointer">
                     </div>
                 </form>
 
             </div>
         </div>
         <div id="logIn" class="w-2/3 h-screen bg-blue-900 shadow-2xl transition-all duration-500 ease-in-out">
-
             <button id="changeBtn"
-                class="z-50 text-white tracking-wide relative top-5 right-5 font-semibold text-lg p-2 hover:bg-white hover:text-blue-900 shadow-xl rounded-lg transition-all duration-300 ease-in-out"><span></span>
-                
+                class="z-50 bg-white text-blue-900 tracking-wide relative top-5 right-5 font-semibold text-sm p-2 hover:shadow-inner shadow-sm rounded-lg transition-all duration-300 ease-in-out">
             </button>
             <div id="logInContainer" class="w-full h-full hidden opacity-0 transition-all ">
-                <form id action="" class="w-full h-full flex flex-col items-start justify-center flex-nowrap p-8">
+                <form action="" name="formLogin"
+                    class="w-full h-full flex flex-col items-start justify-center flex-nowrap p-8">
                     <div class="w-2/3 h-full  flex flex-col items-center justify-center space-y-3">
                         <label for="mailInp" class="text-right font-bold text-white text-base w-8/12"><i
                                 class="fa-regular fa-envelope-open"></i> پست الکترونیکی</label>
                         <input name="mailInp" type="email"
-                            class="bg-white focus:shadow-lg ring-slate-200 w-2/3 p-2 rounded-md transition ">
+                            class="bg-transparent border-b-2 border-white focus:shadow-lg ring-slate-200 w-2/3 p-2 transition ">
                         <label for="passwordInp" class="text-right font-bold text-white text-base w-8/12"><i
                                 class="fa-solid fa-key"></i> رمز ورود</label>
                         <input name="passowordInp" type="password" placeholder="**********"
-                            class="bg-white focus:shadow-lg ring-slate-200 w-2/3 p-2 rounded-md transition ">
+                            class="bg-transparent border-b-2 border-white focus:shadow-lg ring-slate-200 w-2/3 p-2 transition ">
                         <div class="flex items-center justify-start w-2/3 m-2">
                             <a href="#" class="text-white hover:underline text-lg">فراموشی رمز عبور</a>
                         </div>
-                        <button class="w-8/12 p-2 bg-gradient-to-tr from-blue-900 to-blue-700 hover:brightness-110 rounded-lg text-white text-bold
-                        ">ثبت نام</button>
+                        <button
+                            class="group relative w-8/12 p-2 overflow-hidden bg-white text-blue-900 hover:brightness-110 hover:font-bold rounded-lg text-bold focus:ring-8 focus:ring-blue-700" ">ورود
+                            <span
+                                class=" absolute w-10 h-10 left-1/2 -translate-x-1/2 translate-y-5 scale-0
+                            group-hover:-translate-y-8 group-hover:scale-100 rounded-full bg-white transition-all
+                            duration-100 ease-in-out flex justify-center items-center ">
+                                <i class=" fa-solid fa-right-to-bracket text-blue-900"></i>
+                            </span></button>
                     </div>
 
                 </form>
@@ -75,11 +94,55 @@
             </div>
             <div id="loginImage"
                 class=" left-0 bottom-0 absolute w-full h-full flex flex-col items-end justify-end transition-all duration-500 ease-in-out">
-                <img src="/pics/icons/login/opt.svg" alt="" class="w-5/12 h-5/12">
+                <img src="/pics/icons/login/opt.svg" alt="" class="w-5/12 h-5/12 drop-shadow-3xl ">
             </div>
         </div>
     </section>
-    <script src="js/validation.js"></script>
+    <section name="phone-tablet-Login"
+        class="w-full h-screen p-4 bg-blue-900 lg:hidden transition-all duration-500 ease-in-out">
+        <div class="max-w-2xl h-full mx-auto">
+            <div id="bgBlur" class="w-full flex flex-col items-center justify-center space-y-5 transition-all duration-300 ease-in-out">
+                <h1 class="text-center font-extrabold text-2xl text-white drop-shadow-xl m-4">ثبت نام</h1>  
+                <label for="nameInp" class="w-3/5 text-white"><i class="fa-solid fa-pen "></i> نام و نام
+                    خانوادگی</label>
+                <input type="text" class="w-3/5 py-1 md:py-2  shadow-inner bg-blue-900 border-b-2 border-b-white">
+                <label for="telInp" class="w-3/5 text-white"><i class="fa-solid fa-mobile "></i> تلفن همراه</label>
+                <input type="tel" class="w-3/5 py-1 md:py-2  shadow-inner bg-blue-900 border-b-2 border-b-white">
+                <label for="mailInp" class="w-3/5 text-white"><i class="fa-regular fa-envelope-open "></i> پست
+                    الکترونیکی</label>
+                <input type="email" class="w-3/5 py-1 md:py-2  shadow-inner bg-blue-900 border-b-2 border-b-white">
+                <label for="passowordInp" class="w-3/5 text-white"><i class="fa-solid fa-key "></i> رمز ورود</label>
+                <input type="password" class="w-3/5 py-1 md:py-2  shadow-inner bg-blue-900 border-b-2 border-b-white"><br>
+                <button class="w-3/5 bg-blue-800 text-white py-1 md:py-2 rounded-lg relative ">ثبت نام</button>
+            </div>
+            <div id="mobileLoginContainer"
+                class="relative h-[100%] -bottom-10 transition-all duration-500 ease-in-out translate-y-0 max-w-2xl  z-50  rounded-t-[100px] shadow-xl flex flex-col items-center justify-start ">
+                <button id="mobileLoginBtn" class="w-full bg-white m-2 p-4 rounded-2xl text-xl font-extrabold text-blue-900"><span
+                        class="absolute left-1/2 -translate-x-1/2 top-12 rounded-full hidden"><i
+                            class="fa-solid fa-angle-down text-xs"></i></span> ورود به حساب کاربری</button>
+                <div class="w-full h-full flex-col flex items-center justify-start pt-12 text-base space-y-5 bg-white rounded-2xl">
+                    <label class="font-bold  w-3/5 text-slate-700" for="telInp"><i
+                            class="fa-regular fa-envelope-open"></i> ادرس ایمیل</label>
+                    <input class="py-1 w-3/5 border-b-2 border-b-blue-900" type="email" type="tel" name="telInp" id="">
+                    <label class="font-bold  w-3/5 text-slate-700" for="passowordInp"><i class="fa-solid fa-key"></i>
+                        رمز ورود</label>
+                    <input class="py-1 w-3/5 border-b-2 border-b-blue-900" type="password" name="passowordInp" id="">
+                    <a href="#" class="w-3/5 hover:underline">فراموشی رمز عبور ؟</a>
+                    <button class="w-3/5 bg-blue-900 text-white py-2 rounded-lg">ورود</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <script src="js/loginAnimation.js"></script>
+    <script src="js/login-Validation.js"></script>
 </body>
 
 </html>
