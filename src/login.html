@@ -6,63 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
+
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 
-<body class="overflow-hidden">
+<body id="body" class="overflow-hidden">
 
 
-    <section name="desktop-LoginForm" class="hidden w-full h-screen flex-row items-center justify-center lg:flex">
+    <section name="desktop-LoginForm" class="hidden w-full dark:bg-darkBlue-700 h-screen flex-row items-center justify-center lg:flex">
         <!-- top Left bar (dark mode button & home Button) -->
-        <div class=" m-4  p-1 fixed top-0 left-0 text-xl  text-white   rounded-full z-50">
-            <a href="index.html" class="px-6 py-4"><i class="fa-solid fa-house"></i></a>
-            <a href="#" class="px-6 py-4 "><i class="fa-solid fa-moon align-middle "></i></a>
-        </div>
-        <!-- =============================================== -->
+        <div class=" m-4 p-1 fixed top-0 left-0 text-xl  text-white rounded-full z-50">
+            <a href="index.html"><i class="fa-solid fa-house p-4"></i></a>
+            <a href="#" id="darkModeBtn"><i class="fa-solid fa-moon p-4"></i></a>
 
+        </div>
         <img id="opt2" class="hidden absolute -right-2 w-2/5 drop-shadow-3xl" src="/pics/icons/login/opt2.svg" alt="">
         <!-- login image -->
 
         <div id="signIn" class="w-full h-screen transition-all duration-500 ease-in-out z-50">
             <div id="signInContainer"
                 class=" w-full h-screen mx-auto flex items-center flex-col justify-center transition-all duration-500 ease-in-out">
-                <form action="" name="formSignin"
-                    class="w-full h-full p-8 bg-white  flex flex-col items-center justify-center flex-nowrap shadow-xl ">
-                    <h1 class="w-full mb-7 pb-2 text-right text-4xl font-extrabold border-b-2 border-slate-300  ">ثبت
+                <form action="" name="formSignin" 
+                    class="w-full h-full p-8 bg-white dark:bg-darkBlue-700  flex flex-col items-center justify-center flex-nowrap shadow-xl transition-all duration-300">
+                    <h1 class="w-full mb-7 pb-2 text-right text-4xl font-extrabold border-b-2 border-slate-300 dark:text-white  ">ثبت
                         عضویت
                     </h1>
                     <div class="w-2/3 h-full flex flex-col items-center justify-items-start space-y-3">
-                        <label for="name" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                        <label for="name" class="text-right font-bold text-slate-700 dark:text-white text-base w-8/12"><i
                                 class="fa-solid fa-pen"></i> نام و نام خانوادگی</label>
                         <input name="name" type="text"
                             class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
-                        <label for="telInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                        <label for="telInp" class="text-right font-bold text-slate-700 dark:text-white text-base w-8/12"><i
                                 class="fa-solid fa-mobile"></i> تلفن همراه</label>
                         <input name="telInp" type="tel" placeholder="989123456789+"
                             class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
                         <label id="emailAddress" for="mailInp"
-                            class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                            class="text-right font-bold text-slate-700 dark:text-white text-base w-8/12"><i
                                 class="fa-regular fa-envelope-open"></i> پست الکترونیکی</label>
                         <input name="mailInp" type="email" placeholder="Example@gmail.com"
-                            class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
-                        <label for="passwordInp" class="text-right font-bold text-slate-700 text-base w-8/12"><i
+                            class="w-2/3 p-2 border-b-2 border-blue-900  transition focus:shadow-lg ">
+                        <label for="passwordInp" class="text-right font-bold text-slate-700 dark:text-white text-base w-8/12"><i
                                 class="fa-solid fa-key"></i> رمز ورود</label>
                         <input name="passowordInp" type="password" placeholder="**********"
                             class="w-2/3 p-2 border-b-2 border-blue-900 transition focus:shadow-lg ">
                         <input type="submit" name="submit" value="ثبت نام"
-                            class="w-8/12 p-2 bg-gradient-to-tr from-blue-900 to-blue-700 hover:brightness-110 rounded-lg text-white text-bold cursor-pointer">
+                            class="w-8/12 p-2 bg-blue-900 dark:bg-darkBlue-800 hover:brightness-110 rounded-lg text-white text-bold cursor-pointer">
                     </div>
                 </form>
 
             </div>
         </div>
-        <div id="logIn" class="w-2/3 h-screen bg-blue-900 shadow-2xl transition-all duration-500 ease-in-out">
+        <div id="logIn" class="w-2/3 h-screen bg-blue-900 dark:bg-darkBlue-900 shadow-2xl transition-all duration-500 ease-in-out">
             <button id="changeBtn"
-                class="z-50 bg-white text-blue-900 tracking-wide relative top-5 right-5 font-semibold text-sm p-2 hover:shadow-inner shadow-sm rounded-lg transition-all duration-300 ease-in-out">
+                class="z-50  text-white tracking-wide relative top-5 right-5 font-semibold text-sm p-2  rounded-lg transition-all duration-300 ease-in-out">
             </button>
             <div id="logInContainer" class="w-full h-full hidden opacity-0 transition-all ">
                 <form action="" name="formLogin"
@@ -101,8 +101,9 @@
     <section name="phone-tablet-Login"
         class="w-full h-screen p-4 bg-blue-900 lg:hidden transition-all duration-500 ease-in-out">
         <div class="max-w-2xl h-full mx-auto">
-            <div id="bgBlur" class="w-full flex flex-col items-center justify-center space-y-5 transition-all duration-300 ease-in-out">
-                <h1 class="text-center font-extrabold text-4xl text-white drop-shadow-xl m-4">ثبت عضویت</h1>  
+            <div id="bgBlur"
+                class="w-full flex flex-col items-center justify-center space-y-5 transition-all duration-300 ease-in-out">
+                <h1 class="text-center font-extrabold text-4xl text-white drop-shadow-xl m-4">ثبت عضویت</h1>
                 <label for="nameInp" class="w-3/5 text-white"><i class="fa-solid fa-pen "></i> نام و نام
                     خانوادگی</label>
                 <input type="text" class="w-3/5 py-1 md:py-2  bg-blue-900 border-b-2 border-b-white">
@@ -113,14 +114,18 @@
                 <input type="email" class="w-3/5 py-1 md:py-2  bg-blue-900 border-b-2 border-b-white">
                 <label for="passowordInp" class="w-3/5 text-white"><i class="fa-solid fa-key "></i> رمز ورود</label>
                 <input type="password" class="w-3/5 py-1 md:py-2  bg-blue-900 border-b-2 border-b-white"><br>
-                <button class="w-3/5 bg-blue-800 text-white py-2 rounded-lg relative hover:bg-white hover:text-blue-900 ">ثبت نام</button>
+                <button
+                    class="w-3/5 bg-blue-800 text-white py-2 rounded-lg relative hover:bg-white hover:text-blue-900 ">ثبت
+                    نام</button>
             </div>
             <div id="mobileLoginContainer"
                 class="relative h-[100%] -bottom-10 transition-all duration-500 ease-in-out translate-y-0 max-w-2xl  z-50  rounded-t-[100px] shadow-xl flex flex-col items-center justify-start ">
-                <button id="mobileLoginBtn" class="w-full bg-white m-2 p-4 rounded-2xl text-xl font-extrabold text-blue-900"><span
+                <button id="mobileLoginBtn"
+                    class="w-full bg-white m-2 p-4 rounded-2xl text-xl font-extrabold text-blue-900"><span
                         class="absolute left-1/2 -translate-x-1/2 top-12 rounded-full hidden"><i
                             class="fa-solid fa-angle-down text-xs"></i></span> ورود به حساب کاربری</button>
-                <div class="w-full h-full flex-col flex items-center justify-start pt-12 text-base space-y-8 bg-white rounded-2xl">
+                <div
+                    class="w-full h-full flex-col flex items-center justify-start pt-12 text-base space-y-8 bg-white rounded-2xl">
                     <label class="font-bold  w-3/5 text-slate-700" for="telInp"><i
                             class="fa-regular fa-envelope-open"></i> ادرس ایمیل</label>
                     <input class="py-1 w-3/5 border-b-2 border-b-blue-900" type="email" type="tel" name="telInp" id="">
@@ -140,7 +145,30 @@
 
     </section>
 
+    <script>
+        let body = document.querySelector("#body");
+        let darkmod = localStorage.getItem("dark");
+        const enDark = () => {
+            body.classList.add("dark");
+            localStorage.setItem("dark", "enabled");
 
+        }
+        const disDark = () => {
+            body.classList.remove("dark");
+            localStorage.setItem("dark", "disabled");
+        }
+        if (darkmod === "enabled") {
+            enDark();
+        }
+        darkModeBtn.addEventListener("click", (e) => {
+            darkmod = localStorage.getItem("dark");
+            if (darkmod === "disabled") {
+                enDark();
+            } else {
+                disDark();
+            }
+        })
+    </script>
     <script src="js/loginAnimation.js"></script>
     <script src="js/login-Validation.js"></script>
 </body>

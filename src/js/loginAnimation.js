@@ -7,13 +7,13 @@ let loginImage = document.querySelector("#loginImage");
 let iconRotate = document.querySelector(".fa-chevron-right");
 let isLogin = false;
 let loginOpt2 = document.querySelector("#opt2");
-changeBtn.innerHTML = 'ورود به حساب کاربری <i class="fa-solid fa-chevron-right"></i>';
+changeBtn.innerHTML = 'ورود به حساب کاربری';
 changeBtn.addEventListener("click", function () {
     if (isLogin) {
         isLogin = false;
-        changeBtn.innerHTML = 'ورود به حساب کاربری <i class="fa-solid fa-chevron-right"></i>';
+        changeBtn.innerHTML = 'ورود به حساب کاربری';
     } else {
-        changeBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>  ثبت نام در سایت';
+        changeBtn.innerHTML = 'ثبت نام در سایت';
         isLogin = true;
     }
     signInSub.classList.toggle("opacity-0");

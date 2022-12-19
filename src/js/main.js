@@ -7,29 +7,42 @@ let isDark = true;
 let likeIcon = document.querySelector("#likeIcon");
 let moneyIcon = document.querySelector("#moneyIcon");
 let deliveryIcon = document.querySelector("#deliveryIcon");
+let darkmod = localStorage.getItem("dark");
 
-darkModeBtn.addEventListener("click", function () {
-    body.classList.toggle("dark")
-    if (isDark) {
-        likeIcon.src = "/pics/icons/svg/Star(dark).svg"
-        moneyIcon.src = "/pics/icons/svg/Money(dark).svg"
-        deliveryIcon.src = "/pics/icons/svg/Delivery(dark).svg"
-        footerWaveSvg.src = "/pics/icons/svg/pattern(dark).svg";
-        darkModeIcon.style.transform = "rotate(-180deg)";
-        body.style.backgroundColor = "#243b53";
-        darkModeIcon.src = "/pics/icons/svg/contrast(dark).svg";
-        isDark = false;
+const enDark = () => {
+    body.classList.add("dark");
+    likeIcon.src = "/pics/icons/svg/Star(dark).svg"
+    moneyIcon.src = "/pics/icons/svg/Money(dark).svg"
+    deliveryIcon.src = "/pics/icons/svg/Delivery(dark).svg"
+    footerWaveSvg.src = "/pics/icons/svg/pattern(dark).svg";
+    darkModeIcon.style.transform = "rotate(-180deg)";
+    body.style.backgroundColor = "#243b53";
+    darkModeIcon.src = "/pics/icons/svg/contrast(dark).svg";
+    localStorage.setItem("dark", "enabled");
+
+}
+const disDark = () => {
+    body.classList.remove("dark");
+    likeIcon.src = "/pics/icons/svg/Star.svg";
+    moneyIcon.src = "/pics/icons/svg/Money.svg";
+    deliveryIcon.src = "/pics/icons/svg/Delivery.svg";
+    footerWaveSvg.src = "/pics/icons/svg/pattern(footer).svg";
+    darkModeIcon.style.transform = "rotate(0)";
+    body.style.backgroundColor = "#fff";
+    darkModeIcon.src = "/pics/icons/svg/contrast.svg";
+    localStorage.setItem("dark", "disabled");
+}
+if (darkmod === "enabled") {
+    enDark();
+}
+darkModeBtn.addEventListener("click", (e) => {
+    darkmod = localStorage.getItem("dark");
+    if (darkmod === "disabled") {
+        enDark();
     } else {
-        likeIcon.src = "/pics/icons/svg/Star.svg";
-        moneyIcon.src = "/pics/icons/svg/Money.svg";
-        deliveryIcon.src = "/pics/icons/svg/Delivery.svg";
-        footerWaveSvg.src = "/pics/icons/svg/pattern(footer).svg";
-        darkModeIcon.style.transform = "rotate(0)";
-        body.style.backgroundColor = "#fff";
-        darkModeIcon.src = "/pics/icons/svg/contrast.svg";
-        isDark = true;
+        disDark();
     }
-});
+})
 // --------- Go To Top Function -----
 let goToTop = document.getElementById("goToTop");
 let socialBar = document.getElementById("socialBar");
@@ -68,33 +81,3 @@ exBtn.addEventListener("click", function () {
     navBar.style.transform = "scale(0) ";
     navBar.style.display = "hidden";
 })
-$(document).ready(function () {
-    alert("hello")
-})
-
-
-
-
-
-
-
-
-
-
-
-
-// let scrollCont = document.getElementById("srollContainer");
-
-// function nextFunc() {
-//     scrollCont.scrollBy({
-//         left: -40,
-//         behavior: "smooth",
-//     })
-// }
-
-// function prevFunc() {
-//     scrollCont.scrollBy({
-//         left: 80,
-//         behavior: "smooth",
-//     })
-// }
