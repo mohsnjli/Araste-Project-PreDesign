@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="overflow-hidden">
+    <nav class="w-full h-screen flex">
+        <div class="w-1/4 h-full bg-blue-900 select-none z-50 shadow-xl">
+            <div
+                class="w-3/4 h-full flex items-start justify-center mx-auto flex-col rounded shadow-inner text-white transition-all duration-300 ease-in-out font-semibold">
+
+                <a href="#"
+                    class="my-8 px-8 py-2 hover:bg-white/10 rounded-lg transition focus:bg-white focus:text-blue-900 focus:shadow-lg"><i
+                        class="fa-solid fa-house p-1"></i>
+                    صفحه اصلی</a>
+                <a href="#"
+                    class="mb-8 px-8 py-2 hover:bg-white/10 rounded-lg transition focus:bg-white focus:text-blue-900"><i
+                        class="fa-solid fa-user-pen p-1"></i>
+                    ویرایش پروفایل
+                </a>
+                <a href="#"
+                    class="mb-8 px-8 py-2 hover:bg-white/10 rounded-lg transition focus:bg-white focus:text-blue-900"><i
+                        class="fa-solid fa-percent p-1"></i>
+                    کد های تخفیف</a>
+                <a href="#"
+                    class="mb-8 px-8 py-2 hover:bg-white/10 rounded-lg transition focus:bg-white focus:text-blue-900"><i
+                        class="fa-solid fa-headset p-1"></i>
+                    ارسال تیکت
+                </a>
+                <a href="#"
+                    class="mb-8 px-8 py-2 hover:bg-white/10 rounded-lg transition focus:bg-white focus:text-blue-900"><i
+                        class="fa-solid fa-right-from-bracket p-1"></i>خروج</a>
+            </div>
+        </div>
+        <section class="w-full  h-full z-50">
+            <div class="bg-slate-100 w-full h-24 shadow-md flex items-center">
+                <div
+                    class="w-9/12 h-max m-auto  flex items-center justify-end flex-row p-6 rounded-md text-xl transition-all duration 300 ease-in-out">
+                    <a href="#" class="border-r-2 pr-1 notif">
+                        <i class="fa-solid fa-bell m-2 hover:rotate-45 transition"></i>
+                    </a>
+                    <a href="#" class="relative dropdownBtn">
+                        <i class="fa-solid fa-gear m-2 hover:rotate-90 transition"></i>
+                        <ul id=""
+                            class="absolute dropdown left-1/2 -translate-x-1/2 w-64 h-max rounded-lg bg-white/50 backdrop-blur-md p-4 divide-y text-center transition-all duration-300 ease-in-out">
+                            <div class="  flex flex-row items-center justify-center">
+                                <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
+                                    class="rounded-full w-1/2 p-2">
+                                <div class="w-1/2">
+                                    <p class="text-xs font-bold leading-loose">نام و نام خانوادگی</p>
+                                </div>
+                            </div>
+                            <li class="px-4 py-2 hover:bg-slate-100 rounded-xl">
+                                <button>حالت شب <i class="fa-solid fa-moon"></i></button>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full h-screen ">
+                <div class="w-full h-max flex items-center justify-around flex-row mt-10">
+                    <div
+                        class="shadow-md hover:bg-blue-800 hover:text-white rounded-xl mt-2 h-48 w-1/5 text-center transition-all duration-150 ease-in-out p-8 flex items-center justify-around flex-col hover:shadow-2xl hover:shadow-blue-600">
+
+                        <h2 class="text-xl font-semibold cursor-default trasition">
+                            محصولات خریداری شده
+                        </h2>
+                        <p class="text-6xl">50%</p>
+
+                    </div>
+                    <div
+                        class="shadow-md hover:bg-blue-800 hover:text-white rounded-xl mt-2 h-48 w-1/5 text-center transition-all duration-150 ease-in-out p-8 flex items-center justify-around flex-col hover:shadow-2xl hover:shadow-blue-600">
+                        <h2 class="text-xl font-semibold cursor-default trasition">
+                            تیکت های پشتیبانی
+                        </h2>
+                        <p class="text-6xl">50%</p>
+                    </div>
+                    <div
+                        class="shadow-md hover:bg-blue-800 hover:text-white rounded-xl mt-2 h-48 w-1/5 text-center transition-all duration-150 ease-in-out p-8 flex items-center justify-around flex-col hover:shadow-2xl hover:shadow-blue-600">
+                        <h2 class="text-xl font-semibold cursor-default trasition">
+                            جزئیات حساب کاربری
+                        </h2>
+                        <p class="text-6xl">50%</p>
+                    </div>
+                    <div
+                        class="shadow-md hover:bg-blue-800 hover:text-white rounded-xl mt-2 h-48 w-1/5 text-center transition-all duration-150 ease-in-out p-8 flex items-center justify-around flex-col hover:shadow-2xl hover:shadow-blue-600">
+                        <h2 class="text-xl font-semibold cursor-default trasition">
+                            پیگیری سفارشات
+                        </h2>
+                        <p class="text-6xl">50%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+
+
+
+
+
+
+    <script src="/src/js/dashboard.js"></script>
+
+</body>
+
+</html>

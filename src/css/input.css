@@ -85,3 +85,31 @@
 }
 
 /* -----------------------End Footer Components ------------------------ */
+
+
+
+/* dropdown */
+.dropdown {
+    display: none;
+   
+}
+.dropdownBtn:focus .dropdown{
+    display: block;
+   
+}
+
+
+/* notification  */
+.notif {
+    position: relative;
+}
+.notif::after { 
+    position: absolute;
+    content:"";
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    right: 5px;
+    top:0;
+    border-radius: 50px;
+}

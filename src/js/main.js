@@ -1,18 +1,23 @@
 // ----------Dark Mode Functions------
-let footerWaveSvg = document.getElementById("footerWave");
-let darkModeBtn = document.getElementById("darkModeBtn");
-let darkModeIcon = document.getElementById("darkModeIcon");
-let body = document.querySelector("#body");
+let $ = document;
+let footerWaveSvg = $.getElementById("footerWave");
+let darkModeBtn = $.getElementById("darkModeBtn");
+let darkModeIcon = $.getElementById("darkModeIcon");
+let body = $.querySelector("#body");
 let isDark = true;
-let likeIcon = document.querySelector("#likeIcon");
-let moneyIcon = document.querySelector("#moneyIcon");
-let deliveryIcon = document.querySelector("#deliveryIcon");
+let likeIcon = $.querySelector("#likeIcon");
+let moneyIcon = $.querySelector("#moneyIcon");
+let deliveryIcon = $.querySelector("#deliveryIcon");
 let darkmod = localStorage.getItem("dark");
+let logo = $.querySelectorAll(".iconDark");
+
+
 
 const enDark = () => {
     body.classList.add("dark");
-    likeIcon.src = "/pics/icons/svg/Star(dark).svg"
-    moneyIcon.src = "/pics/icons/svg/Money(dark).svg"
+    logo.src = "/pics/logo-dark.png";
+    likeIcon.src = "/pics/icons/svg/Star(dark).svg";
+    moneyIcon.src = "/pics/icons/svg/Money(dark).svg";
     deliveryIcon.src = "/pics/icons/svg/Delivery(dark).svg"
     footerWaveSvg.src = "/pics/icons/svg/pattern(dark).svg";
     darkModeIcon.style.transform = "rotate(-180deg)";
@@ -23,6 +28,7 @@ const enDark = () => {
 }
 const disDark = () => {
     body.classList.remove("dark");
+    logo.src = "/pics/logo.png";
     likeIcon.src = "/pics/icons/svg/Star.svg";
     moneyIcon.src = "/pics/icons/svg/Money.svg";
     deliveryIcon.src = "/pics/icons/svg/Delivery.svg";
@@ -81,3 +87,4 @@ exBtn.addEventListener("click", function () {
     navBar.style.transform = "scale(0) ";
     navBar.style.display = "hidden";
 })
+
