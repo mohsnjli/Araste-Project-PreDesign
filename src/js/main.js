@@ -88,3 +88,4 @@ exBtn.addEventListener("click", function () {
     navBar.style.display = "hidden";
 })
 
+// number
