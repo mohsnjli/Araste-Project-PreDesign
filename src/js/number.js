@@ -48,21 +48,29 @@ let picZoomBg = document.getElementById("picZoomBg")
 let exitBtn = document.getElementById("#exitBtn")
 
 
-mainPic.addEventListener("click", function () {
+ mainPic.addEventListener("click", function () {
     picZoomBg.classList.toggle("hidden")
-    mainPic.classList.toggle("scale-110");
-    mainPic.classList.toggle("-translate-x-96");
-    mainPic.classList.toggle("translate-y-12")
+    mainPic.classList.toggle("lg:scale-110");
+    mainPic.classList.toggle("lg:-translate-x-96");
+    mainPic.classList.toggle("lg:translate-y-12")
     mainPic.style.transition = "all 0.5s ease";
 
 })
+function exFunc() {
+    mainPic.classList.toggle("lg:translate-y-12")
+    mainPic.classList.toggle("lg:-translate-x-96");
+    mainPic.classList.toggle("lg:scale-110");
+    picZoomBg.classList.toggle("hidden")
 
+}
 let thumbPicCont = document.querySelectorAll(".thumbPicCont img");
 for (let i = 0; i <= thumbPicCont.length; i++) {
 
     mainPic.src = thumbPicCont[0].src;
     thumbPicCont[i].addEventListener("click", function () {
         mainPic.src = thumbPicCont[i].src;
+        
+        
     })
 
 }
