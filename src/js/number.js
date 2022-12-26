@@ -50,7 +50,7 @@ let exitBtn = document.getElementById("#exitBtn")
 
  mainPic.addEventListener("click", function () {
     picZoomBg.classList.toggle("hidden")
-    mainPic.classList.toggle("lg:scale-110");
+    mainPic.classList.toggle("lg:scale-125");
     mainPic.classList.toggle("lg:-translate-x-96");
     mainPic.classList.toggle("lg:translate-y-12")
     mainPic.style.transition = "all 0.5s ease";
@@ -59,7 +59,7 @@ let exitBtn = document.getElementById("#exitBtn")
 function exFunc() {
     mainPic.classList.toggle("lg:translate-y-12")
     mainPic.classList.toggle("lg:-translate-x-96");
-    mainPic.classList.toggle("lg:scale-110");
+    mainPic.classList.toggle("lg:scale-125");
     picZoomBg.classList.toggle("hidden")
 
 }
