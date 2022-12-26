@@ -15,25 +15,54 @@
 
 <body>
 
+    <div id="picZoomBg" class="w-full h-full bg-black/30 absolute hidden">
+        <button id="exitBtn" class="text-white text-4xl absolute right-10 top-10 "><i
+                class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    <section class="flex items-center justify-center flex-row w-full h-screen z-50">
+        <div class="w-1/2 h-screen flex items-center justify-center flex-col ">
 
-    <section class="flex items-center justify-center flex-row w-full h-screen">
-        <div class="w-1/2 h-screen flex items-center justify-center">
+            <img alt="" id="mainPic" class="w-2/3 rounded-xl producePic z-50 ">
 
-            <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt="" class="w-3/4 rounded-xl">
+            <div class="flex items-center justify-center flex-row">
+
+
+                <div class="bg-slate-100 w-10/12 rounded-lg mt-2 p-2 
+             flex flex-row items-center justify-center overflow-hidden thumbPicCont">
+
+                    <img src="/pics/icons/logo.png" alt=""
+                        class="w-1/6 m-2 rounded-lg active:ring-4 active:ring-blue-300 focus:ring-blue-500 transition pictures">
+                    <img src="/pics/MainShapes/profle.png" alt=""
+                        class="w-1/6 m-2 rounded-lg active:ring-4 active:ring-blue-300 focus:ring-blue-500 transition pictures">
+                    <img src="/pics/png/enamad.jpg" alt=""
+                        class="w-1/6 m-2 rounded-lg active:ring-4 active:ring-blue-300 focus:ring-blue-500 transition pictures">
+                    <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
+                        class="w-1/6 m-2 rounded-lg active:ring-4 active:ring-blue-300 focus:ring-blue-500 transition pictures">
+                    <img src="/pics/MainShapes/aspect-ratios-blogpost-1x1-1 (1).png" alt=""
+                        class="w-1/6 m-2 rounded-lg active:ring-4 active:ring-blue-300 focus:ring-blue-500 transition pictures">
+                </div>
+
+            </div>
         </div>
         <div class="w-1/2 h-1/2 text-right">
-            <div class="w-full h-full flex flex-col justify-center">
-                <h4 class="text-slate-400 text-xl">دستمال کاغذی</h4>
+            <div class="w-full h-full flex flex-col justify-center gap-y-4">
+                <h4 class="text-slate-600 text-xl">دسته بندی : <span class="text-slate-400">دستمال کاغذی</span></h4>
                 <h1 class="font-medium text-4xl">دستمال کاغذی 100 برگ</h1>
-                <div>
-
-                    <ul class="text-slate-700">
-                        <ol class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ab!</ol>
-                        <ol class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ab!</ol>
-                        <ol class="my-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, ab!</ol>
+                <div class="">
+                    <ul class="text-slate-700 mb-4">
+                        <p class="text-black">توضیحات محصول</p>
+                        <ol class="my-2 list-disc list-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                            و با استفاده از
+                            طراحان گرافیک است</ol>
+                        <ol class="my-2 list-disc list-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                            و با استفاده از
+                            طراحان گرافیک است</ol>
+                        <ol class="my-2 list-disc list-item">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                            و با استفاده از
+                            طراحان گرافیک است</ol>
                     </ul>
-                    
-                    <p class="font-medium text-lg">هر عدد</p>
+                    <p class="mb-4">وضعیت : <span class="text-green-600 text-xl">موجود</span></p>
+                    <p class="inline font-medium text-lg">هر عدد</p>
                     <p class="inline font-extrabold text-blue-900 text-2xl">12000</p>
                     <p class="inline font-semibold text-lg">تومان</p>
                     <div>
@@ -41,29 +70,37 @@
                             <label for="custom-input-number" class="w-full text-gray-700 text-sm font-semibold">تعداد
                             </label>
                             <div
-                                class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1 transition-all duration-300 ease-in-out">
-                                <button data-action="decrement"
-                                    class=" bg-blue-900 text-white hover:text-gray-700 transition hover:bg-white  h-full w-20 rounded-r cursor-pointer outline-none">
-                                    <span class="m-auto text-2xl font-thin">−</span>
-                                </button>
-        
-                                <input type="number"
-                                    class=" focus:outline-none text-center w-full bg-blue-900 font-semibold text-md
+                                class="flex flex-row justify-items-center h-10 w-full rounded-lg relative bg-transparent mt-1 transition-all duration-300 ease-in-out bg-slate-600">
+                                <div class="flex flex-row">
+                                    <button data-action="decrement"
+                                        class=" bg-blue-900 text-white hover:text-gray-700 transition hover:bg-white  h-full w-20 rounded-r cursor-pointer outline-none">
+                                        <span class="m-auto text-2xl font-thin">−</span>
+                                    </button>
+
+                                    <input type="number" class=" focus:outline-none text-center w-full bg-blue-900 font-semibold text-md
                                     md:text-basecursor-default flex items-center text-white "
-                                    name="custom-input-number" value="0"></input>
-                                <button data-action="increment"
-                                    class="bg-blue-900 text-white hover:text-gray-700 transition hover:bg-white  h-full w-20 rounded-l cursor-pointer">
-                                    <span class="m-auto text-2xl font-thin">+</span>
-                                </button>
-        
+                                        name="custom-input-number" value="0"></input>
+                                    <button data-action="increment"
+                                        class="bg-blue-900 text-white hover:text-gray-700 transition hover:bg-white  h-full w-20 rounded-l cursor-pointer">
+                                        <span class="m-auto text-2xl font-thin">+</span>
+                                    </button>
+                                </div>
+                                <div class=" flex flex-row items-center justify-center w-full">
+
+
+                                    <button class="w-full bg-red-700 p-2 ">اضافه به سبد خرید</button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-    </section>
 
+    </section>
+    <section class="w-full h-screen">
+
+    </section>
 
 
 
