@@ -17,133 +17,135 @@
 </head>
 
 <body id="body" class="w-full h-screen text-sm overflow-x-hidden lg:text-base transition duration-300">
-    <div class="w-full h-screen overflow-hidden ">
 
-        <header id="header"
-            class="w-full h-36 p-2 flex items-center justify-between lg:justify-center lg:bg-transparent">
-            <a id="darkModeBtn" class=" w-1/6 h-24 flex items-center justify-center">
-                <img id="darkModeIcon" src="/pics/icons/svg/contrast.svg" class="iconSizeDark cursor-pointer hover:rotate-180 transition-all duration-500 ease-in-out
+
+    <header id="header" class="w-full h-36 p-2 flex items-center justify-between lg:justify-center lg:bg-transparent">
+        <a id="darkModeBtn" class=" w-1/6 h-24 flex items-center justify-center">
+            <img id="darkModeIcon" src="/pics/icons/svg/contrast.svg" class="iconSizeDark cursor-pointer hover:rotate-180 transition-all duration-500 ease-in-out
                     " alt="">
-            </a>
+        </a>
 
-            <div id="headerBanner" class="flex items-center justify-center w-full h-24 lg:hidden">
-                <img src="/pics/icons/logo.png" alt=""
-                    class="iconDark w-[100px] h-[100px] border-2 border-transparent px-1 rounded-full">
-            </div>
-            <div id="listItem"
-                class="hidden lg:flex w-5/6 h-16 sticky top-2 text-sm font-medium text-textPurple bg-blue-900 rounded-full   shadow-2xl overflow-hidden dark:bg-darkBlue-900 text-white flex-row-reverse items-center justify-around ">
-                <a href="/src/login.html">
-                    <title>ورود/ثبت نام</title>
+        <div id="headerBanner" class="flex items-center justify-center w-full h-24 lg:hidden">
+            <img src="/pics/icons/logo.png" alt=""
+                class="iconDark w-[100px] h-[100px] border-2 border-transparent px-1 rounded-full">
+        </div>
+        <div id="listItem"
+            class="hidden lg:flex w-5/6 h-16 sticky top-2 text-sm font-medium text-textPurple bg-blue-900 rounded-full   shadow-2xl overflow-hidden dark:bg-darkBlue-900 text-white flex-row-reverse items-center justify-around ">
+            <a href="/src/login.html">
+                <title>ورود/ثبت نام</title>
+                <i
+                    class="fa-solid fa-circle-user text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
+            </a>
+            <a href="#">
+                <i
+                    class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition">
+                    <title>خبرنامه</title>
+                </i>
+            </a>
+            <ul class="w-full h-full my-auto flex text-base font-semibold items-center justify-start ">
+                <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
+                    <img src="/pics/icons/svg/house.svg" class="w-iconW h-iconW rounded-full" alt="">
+                    <li class="">
+                        &nbspخانه
+                        <div class="after"></div>
+                    </li>
+                </a>
+                <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
+                    <img src="/pics/icons/svg/store.svg" class="w-iconW h-iconW rounded-full" alt="">
+                    <li class="">
+                        &nbspمحصولات
+                        <div class="after"></div>
+                    </li>
+                </a>
+                <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
+                    <img src="/pics/icons/svg/shopping-cart-full.svg" class="w-iconW h-iconW rounded-full" alt="">
+                    <li class="">
+                        &nbspخرید عمده
+                        <div class="after"></div>
+                    </li>
+                </a>
+                <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
+                    <img src="/pics/icons/svg/sharing.svg" class="w-iconW h-iconW rounded-full" alt="">
+                    <li class="">
+                        &nbspاعطای نمایندگی
+                        <div class="after"></div>
+                    </li>
+                </a>
+                <a href="about-us.html" class="li-hover flex flex-row items-center justify-center p-4">
+                    <img src="/pics/icons/svg/interrogation.svg" class="w-iconW h-iconW rounded-full" alt="">
+                    <li class="">
+                        &nbspدرباره اراسته
+                        <div class="after"></div>
+                    </li>
+                </a>
+                <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
+                    <img src="/pics/icons/svg/phone-call.svg" class="w-iconW h-iconW  rounded-full" alt="">
+                    <li class="">
+                        &nbspتماس با ما
+                        <div class="after"></div>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="hidden w-1/6 h-24 lg:flex items-center justify-center">
+            <img src="/pics/icons/logo.png" alt=""
+                class="iconDark w-[100px] h-[100px] border-2  border-transparent px-1 rounded-full">
+        </div>
+        <button id="humburgerMenuBtn" class="flex items-center justify-center lg:hidden w-1/6 h-24 ">
+            <i class="fa-solid fa-bars text-5xl dark:text-white dark:bg-darkBlue-900 p-4 rounded-xl text-blue-900"></i>
+        </button>
+        <nav id="navBar"
+            class="hidden transition-all duration-500 ease-in-out rounded-3xl lg:hidden absolute left-2 top-2 overflow-hidden w-2/3 h-max bg-blue-900 dark:bg-darkBlue-900">
+            <button id="exBtn" class="absolute left-4 top-4">
+                <i
+                    class=" fa-solid fa-xmark text-6xl text-white hover:text-blue-900 hover:bg-white px-3 rounded-full transition"></i>
+            </button>
+            <ul
+                class="w-full h-full flex flex-col items-start justify-center text-2xl text-center p-4 space-y-4 text-white">
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
                     <i
                         class="fa-solid fa-circle-user text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
+                    <li class="inline">ثبت نام / ورود</li>
                 </a>
-                <a href="#">
-                    <i
-                        class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition">
-                        <title>خبرنامه</title>
-                    </i>
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
+                    <img src="/pics/icons/svg/house.svg" alt="" class="w-iconW h-iconW inline rounded-full">
+                    <li class="inline">خانه</li>
                 </a>
-                <ul class="w-full h-full my-auto flex text-base font-semibold items-center justify-start ">
-                    <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
-                        <img src="/pics/icons/svg/house.svg" class="w-iconW h-iconW rounded-full" alt="">
-                        <li class="">
-                            &nbspخانه
-                            <div class="after"></div>
-                        </li>
-                    </a>
-                    <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
-                        <img src="/pics/icons/svg/store.svg" class="w-iconW h-iconW rounded-full" alt="">
-                        <li class="">
-                            &nbspمحصولات
-                            <div class="after"></div>
-                        </li>
-                    </a>
-                    <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
-                        <img src="/pics/icons/svg/shopping-cart-full.svg" class="w-iconW h-iconW rounded-full" alt="">
-                        <li class="">
-                            &nbspخرید عمده
-                            <div class="after"></div>
-                        </li>
-                    </a>
-                    <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
-                        <img src="/pics/icons/svg/sharing.svg" class="w-iconW h-iconW rounded-full" alt="">
-                        <li class="">
-                            &nbspاعطای نمایندگی
-                            <div class="after"></div>
-                        </li>
-                    </a>
-                    <a href="about-us.html" class="li-hover flex flex-row items-center justify-center p-4">
-                        <img src="/pics/icons/svg/interrogation.svg" class="w-iconW h-iconW rounded-full" alt="">
-                        <li class="">
-                            &nbspدرباره اراسته
-                            <div class="after"></div>
-                        </li>
-                    </a>
-                    <a href="#" class="li-hover flex flex-row items-center justify-center p-4">
-                        <img src="/pics/icons/svg/phone-call.svg" class="w-iconW h-iconW  rounded-full" alt="">
-                        <li class="">
-                            &nbspتماس با ما
-                            <div class="after"></div>
-                        </li>
-                    </a>
-                </ul>
-            </div>
-            <div class="hidden w-1/6 h-24 lg:flex items-center justify-center">
-                <img src="/pics/icons/logo.png" alt=""
-                    class="iconDark w-[100px] h-[100px] border-2  border-transparent px-1 rounded-full">
-            </div>
-            <button id="humburgerMenuBtn" class="flex items-center justify-center lg:hidden w-1/6 h-24 ">
-                <i
-                    class="fa-solid fa-bars text-5xl dark:text-white dark:bg-darkBlue-900 p-4 rounded-xl text-blue-900"></i>
-            </button>
-            <nav id="navBar"
-                class="hidden transition-all duration-500 ease-in-out rounded-3xl lg:hidden absolute left-2 top-2 overflow-hidden w-2/3 h-max bg-blue-900 dark:bg-darkBlue-900">
-                <button id="exBtn" class="absolute left-4 top-4">
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
+                    <img src="/pics/icons/svg/store.svg" alt="" class="w-iconW h-iconW inline rounded-full">
+                    <li class="inline">محصولات</li>
+                </a>
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
+                    <img src="/pics/icons/svg/shopping-cart-full.svg" alt=""
+                        class="w-iconW h-iconW inline rounded-full">
+                    <li class="inline">خرید عمده</li>
+                </a>
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
+                    <img src="/pics/icons/svg/sharing.svg" alt="" class="w-iconW h-iconW inline rounded-full">
+                    <li class="inline">اعطای نمایندگی</li>
+                </a>
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition"
+                    href="about-us.html">
+                    <img src="/pics/icons/svg/interrogation.svg" alt="" class="w-iconW h-iconW inline rounded-full">
+                    <li class="inline">درباره آراسته</li>
+                </a>
+                <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
                     <i
-                        class=" fa-solid fa-xmark text-6xl text-white hover:text-blue-900 hover:bg-white px-3 rounded-full transition"></i>
-                </button>
-                <ul
-                    class="w-full h-full flex flex-col items-start justify-center text-2xl text-center p-4 space-y-4 text-white">
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <i
-                            class="fa-solid fa-circle-user text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
-                        <li class="inline">ثبت نام / ورود</li>
-                    </a>
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <img src="/pics/icons/svg/house.svg" alt="" class="w-iconW h-iconW inline rounded-full">
-                        <li class="inline">خانه</li>
-                    </a>
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <img src="/pics/icons/svg/store.svg" alt="" class="w-iconW h-iconW inline rounded-full">
-                        <li class="inline">محصولات</li>
-                    </a>
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <img src="/pics/icons/svg/shopping-cart-full.svg" alt=""
-                            class="w-iconW h-iconW inline rounded-full">
-                        <li class="inline">خرید عمده</li>
-                    </a>
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <img src="/pics/icons/svg/sharing.svg" alt="" class="w-iconW h-iconW inline rounded-full">
-                        <li class="inline">اعطای نمایندگی</li>
-                    </a>
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition"
-                        href="about-us.html">
-                        <img src="/pics/icons/svg/interrogation.svg" alt="" class="w-iconW h-iconW inline rounded-full">
-                        <li class="inline">درباره آراسته</li>
-                    </a>
-                    <a class="w-max px-3 py-2 rounded-lg hover:bg-white hover:text-blue-900 transition" href="#">
-                        <i
-                            class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
-                        <li class="inline">خبرنامه</li>
-                    </a>
-                </ul>
-            </nav>
-        </header>
-        <br>
-    </div>
-    </div>
-    </div>
-    <br><br><br><br>
+                        class="fa-regular fa-bell text-3xl ml-4 p-1 hover:bg-white hover:text-blue-900 rounded-full transition"></i>
+                    <li class="inline">خبرنامه</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+
+    <figure class="w-full h-max p-10">
+        <a href="#" class="">
+            <img src="/pics/MainShapes/Araste-Banner.png" alt=""
+                class="mx-auto rounded-2xl object-contain transition hover:scale-95  ">
+        </a>
+    </figure>
+
     <section
         class="relative max-w-4xl mx-auto h-1/5  flex-row flex  items-center justify-around dark:border-w text-white border-2 border-black dark:border-white rounded-full lg:h-32">
         <div class="flex flex-col items-center justify-center ">
